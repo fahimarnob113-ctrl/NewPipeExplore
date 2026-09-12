@@ -18,7 +18,7 @@ a = Analysis(
     ['newpipe_playlist_browser.py'],
     pathex=[],
     binaries=[],
-    datas=[],
+    datas=[('app.ico', '.')] if __import__('os').path.exists('app.ico') else [],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},

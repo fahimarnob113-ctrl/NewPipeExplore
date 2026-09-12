@@ -229,6 +229,17 @@ class App(tk.Tk):
         self.geometry("1020x580")
         self.minsize(760, 420)
 
+        # Set window icon if available
+        base_dir = getattr(sys, "_MEIPASS", os.path.dirname(os.path.abspath(__file__)))
+        icon_candidate = os.path.join(base_dir, "app.ico")
+        if not os.path.exists(icon_candidate):
+            icon_candidate = os.path.abspath("app.ico")
+        if os.path.exists(icon_candidate):
+            try:
+                self.iconbitmap(icon_candidate)
+            except Exception:
+                pass
+
         self.playlists = []          # all loaded Playlist objects
         self.pl_by_iid = {}          # treeview iid -> Playlist
         self.current_videos = []     # full videos list of currently selected playlist
