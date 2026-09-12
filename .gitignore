@@ -1,0 +1,18 @@
+﻿# Python bytecode
+__pycache__/
+*.py[cod]
+*.class
+
+# PyInstaller build artifacts
+build/
+dist/
+
+# Personal / Private user backups
+NewPipeData*.zip
+Newpipe_Explore app.zip
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
