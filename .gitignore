@@ -1,4 +1,4 @@
-﻿# Python bytecode
+# Python bytecode
 __pycache__/
 *.py[cod]
 *.class
@@ -10,6 +10,9 @@ dist/
 # Personal / Private user backups
 NewPipeData*.zip
 Newpipe_Explore app.zip
+
+# Personal notes & blueprints
+APP_IDEAS.md
 
 # IDE & OS files
 .vscode/
